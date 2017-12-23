@@ -4,7 +4,7 @@ RUN apt update -y && \
   apt install -y git build-essential libcurl4-openssl-dev autotools-dev automake && \
   rm -rf /var/lib/apt/lists/* && \
   mkdir /bitzeny && \
-  git clone https://github.com/bitzeny/cpuminer.git /bitzeny/cpuminer
+  git clone https://github.com/macchky/cpuminer.git /bitzeny/cpuminer
 
 WORKDIR /bitzeny/cpuminer
 RUN ./autogen.sh && \
